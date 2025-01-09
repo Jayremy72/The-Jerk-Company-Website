@@ -1,0 +1,94 @@
+.header {
+    background-color: #af9559;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh; /* Adjust height as needed */
+  background-image: url('./Assets/Images/The+Jerk+Company-3\(copy\).jpeg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Allows positioning of overlay content */
+  color: white; /* Ensures text is visible over background */
+    background-color: #d2ba72;
+  /* background-image: url(./Assets/Images/The+Jerk+Company-3\(resize\).jpg); */
+
+ }
+
+
+.section-break {
+    background-color: #d2ba72;
+}
+
+h1 {
+    color: #ffbf3f;
+    font-family: crimson-text;
+    font-size: larger;
+}
+
+.lead {
+    color: white;
+    font-weight: 400;
+}
+
+h2 {
+color: black;
+font-family: crimson-text;
+}
+
+
+
+h3 {
+    font-weight: 800;
+    font-family: crimson-text;
+}
+
+h4 {
+    color: rgb(90, 67, 223)
+}
+    
+.blog {
+    background-color: #d2ba72;
+}
+
+.carousel {
+    background-color: #d2ba72 ;
+  
+}
+
+.rounded-image {
+    border-radius: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center-aligns text */
+    padding: 20px; /* Adds space around the content */
+    background-color: #d2ba72;
+    
+}
+.menu-title {
+    font-weight: bold;
+}
+
+.map {
+    background-color: #d2ba72;
+}
+
+.footer {
+    background-color: #d2ba72;
+}
+
+.content-section {
+    padding: 50px 0;
+    background-color: #ffe5b4; /* Light peach color for content section */
+}
+

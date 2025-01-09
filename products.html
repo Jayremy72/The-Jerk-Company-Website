@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Jerk Co Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .header img {
+            max-height: 100px; /* Adjust the height for prominence */
+            margin-right: 10px; /* Add margin to the right of the logo */
+        }
+        .header .fs-4 {
+            margin-left: 10px; /* Add margin to the left of the title */
+        }
+        .hero {
+            background-image: url('./Assets/Images/20230525_133305.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white; /* Ensure text is readable */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+        }
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .products {
+            background-color: #f8f9fa; /* Light grey background for product section */
+            padding: 50px 0;
+        }
+        .product-details {
+            background-color: #e9ecef; /* Slightly darker grey for product details */
+            padding: 50px 0;
+        }
+        .footer .nav {
+            display: flex;
+            justify-content: space-between; /* Distribute space evenly */
+            flex-wrap: wrap; /* Allow items to wrap if needed */
+        }
+        .footer .nav-item {
+            margin: 5px 10px; /* Add margin for spacing */
+        }
+    </style>
+</head>
+<body>
+  <section id="header" class="header">
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="./Assets/Images/THE JERK CO - no bg logo.png" alt="The Jerk Company logo" width="120" height="75">
+          <span class="fs-4">The Jerk Co Products</span>
+        </a>
+        <ul class="nav nav-pills align-items-center">
+          <li class="nav-item"><a href="Index.html" class="nav-link text-primary-emphasis">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Products</a></li>
+          <li class="nav-item"><a href="history-of-jerk.html" class="nav-link text-primary-emphasis">History Of Jerk</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link text-primary-emphasis">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-primary-emphasis">Events</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-primary-emphasis">About Us</a></li>
+        </ul>
+      </header>
+    </div>
+  </section>
+
+  <section id="hero" class="hero">
+    <div class="hero-text text-center">
+      <h1 class="display-5 fw-bold">Discover Our Authentic Flavors</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Bring the taste of the Caribbean to your kitchen with our exclusive marinades, sauces, and spice mixes.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="#products" class="btn btn-warning btn">Explore Products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="products py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-5">Our Products</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./Assets/Images/Jerk Marinade Sticker.jpg" class="card-img-top" alt="Jerk Marinade" style="height: 300px; object-fit: cover; width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title">Jerk Marinade</h5>
+              <p class="card-text">Our signature Jerk Marinade, perfect for adding a spicy kick to your dishes.</p>
+              <a href="ecommerce-link" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./Assets/Images/JERK - GLAZE Angry Jerk Sticker.jpg" class="card-img-top" alt="Angry Jerk Glaze" style="height: 300px; object-fit: cover; width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title">Angry Jerk Glaze</h5>
+              <p class="card-text">Spice up your life with our Angry Jerk Glaze, perfect for any occasion.</p>
+              <a href="ecommerce-link" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./Assets/Images/Spice mix Packaging.jpg" class="card-img-top" alt="Spice Mix Packaging" style="height: 300px; object-fit: cover; width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title">Spice Mix</h5>
+              <p class="card-text">A blend of authentic Caribbean spices to enhance your cooking.</p>
+              <a href="ecommerce-link" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="product-details" class="product-details py-5">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">Explore Our Products in Detail</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h3>Jerk Marinade</h3>
+                <p>Our signature Jerk Marinade is crafted to infuse your dishes with the authentic flavors of the Caribbean. Perfect for marinating meats and vegetables.</p>
+                <a href="ecommerce-link-jerk-marinade" class="btn btn-primary">Buy Jerk Marinade</a>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h3>Jerk Glaze (Mild, Medium, Angry Jerk)</h3>
+                <p>Choose your heat level with our Jerk Glaze range. Whether you prefer mild, medium, or the fiery Angry Jerk, each glaze adds a sweet and spicy finish to your meals.</p>
+                <a href="ecommerce-link-jerk-glaze" class="btn btn-primary">Buy Jerk Glaze</a>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h3>Green Seasoning</h3>
+                <p>Our Green Seasoning is a versatile blend of herbs and spices, perfect for marinating, seasoning, or as a base for your favorite dishes.</p>
+                <a href="ecommerce-link-green-seasoning" class="btn btn-primary">Buy Green Seasoning</a>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h3>Jamaican Jerk Dry Rub</h3>
+                <p>Experience the bold flavors of Jamaica with our Jerk Dry Rub. Ideal for grilling, roasting, or adding a kick to any dish.</p>
+                <a href="ecommerce-link-jerk-dry-rub" class="btn btn-primary">Buy Jerk Dry Rub</a>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h3>All Purpose Seasoning</h3>
+                <p>Our All Purpose Seasoning is a must-have in any kitchen. Enhance the flavor of any dish with this versatile blend.</p>
+                <a href="ecommerce-link-all-purpose-seasoning" class="btn btn-primary">Buy All Purpose Seasoning</a>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h3>Caribbean Curry Powder</h3>
+                <p>Our Caribbean Curry Powder is a rich blend of spices that brings the vibrant flavors of the Caribbean to your kitchen. Perfect for curries and stews.</p>
+                <a href="ecommerce-link-caribbean-curry-powder" class="btn btn-primary">Buy Caribbean Curry Powder</a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="footer" class="footer">
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2024 The Jerk Company</p>
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="./Assets/Images/THE JERK CO - no bg logo.png" alt="The Jerk Company logo" width="75" height="50">
+        </a>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="Index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link px-2 text-body-secondary">Products</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">History of Jerk</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Events</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About Us</a></li>
+        </ul>
+      </footer>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html> 
