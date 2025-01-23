@@ -70,13 +70,42 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; /* Center-aligns text */
-    padding: 20px; /* Adds space around the content */
+    text-align: center;
+    padding: 20px;
     background-color: #d2ba72;
-    
 }
+
+.menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.menu h4 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: rgb(90, 67, 223);
+}
+
+.menu p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
 .menu-title {
+    font-size: 1.4rem;
     font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.menu-sub {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
 .map {
@@ -87,8 +116,147 @@ h4 {
     background-color: #d2ba72;
 }
 
+.footer .nav {
+    display: flex;
+    flex-wrap: nowrap;  /* Prevent wrapping */
+    justify-content: flex-end;
+    gap: 1rem;  /* Consistent spacing between items */
+}
+
+.footer .nav-item {
+    white-space: nowrap;  /* Prevent text wrapping within items */
+}
+
+.footer .nav-link {
+    padding: 0.5rem 1rem;  /* Consistent padding */
+    color: rgba(0, 0, 0, 0.65) !important;  /* Override Bootstrap's default */
+}
+
+.footer .nav-link:hover {
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Adjust container for smaller screens */
+@media (max-width: 768px) {
+    .footer .nav {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .footer .col-md-4 {
+        text-align: center;
+    }
+}
+
+/* Clean up and consolidate blog styles */
+
+/* Main blog section */
 .content-section {
     padding: 50px 0;
-    background-color: #ffe5b4; /* Light peach color for content section */
+    background-color: #ffe5b4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Blog cards */
+.content-section .card {
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Card colors */
+.content-section .container .card:nth-of-type(1) {
+    background-color: #e6d5b3 !important;
+}
+
+.content-section .container .card:nth-of-type(2) {
+    background-color: #d2ba72 !important;
+}
+
+.content-section .container .card:nth-of-type(3) {
+    background-color: #af9559 !important;
+}
+
+/* Text styles */
+.content-section h2.fw-bold {
+    font-size: 3.0rem;
+    color: #4a2f0f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.content-section .card h3 {
+    font-size: 2.5rem;
+    color: #4a2f0f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.content-section .card h4 {
+    font-size: 2rem;
+    color: #8b4513;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content-section .card p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Quotes and emphasis */
+.content-section .card p strong {
+    color: #8b4513;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.content-section .card blockquote,
+.content-section .card p em {
+    font-size: 1.3rem;
+    color: #5c3415;
+    font-style: italic;
+    line-height: 1.6;
+    border-left: 4px solid #af9559;
+    padding-left: 1rem;
+    margin: 2rem 0;
+}
+
+/* Comment sections */
+.content-section .card .mb-4 {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-section .card .mb-4 h4 {
+    font-size: 2rem;
+    color: #4a2f0f;
+    margin-bottom: 1.5rem;
+}
+
+.content-section .card .form-label {
+    font-size: 1.1rem;
+    color: #5c3415;
+    font-weight: 500;
+}
+
+/* Hover effects */
+.content-section .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
