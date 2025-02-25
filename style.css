@@ -1,5 +1,5 @@
 .header {
-    background-color: #af9559;
+    background-color: #e7c792;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -15,10 +15,11 @@
   background-position: center;
   position: relative; /* Allows positioning of overlay content */
   color: white; /* Ensures text is visible over background */
-    background-color: #d2ba72;
+    background-color: #ffbf3f;
   /* background-image: url(./Assets/Images/The+Jerk+Company-3\(resize\).jpg); */
 
  }
+
 
 
 .section-break {
@@ -53,12 +54,16 @@ h4 {
 }
     
 .blog {
-    background-color: #d2ba72;
+    background-color: #ffbf3f;
 }
 
 .carousel {
-    background-color: #d2ba72 ;
+    background-color: #ffbf3f ;
   
+}
+
+.form {
+    background-color: #ffbf3f;
 }
 
 .rounded-image {
@@ -72,11 +77,11 @@ h4 {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    background-color: #d2ba72;
+    background-color: #ffbf3f;
 }
 
 .menu h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
 }
 
@@ -86,7 +91,7 @@ h4 {
 }
 
 .menu h4 {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     color: rgb(90, 67, 223);
 }
@@ -109,11 +114,11 @@ h4 {
 }
 
 .map {
-    background-color: #d2ba72;
+    background-color: #ffbf3f;
 }
 
 .footer {
-    background-color: #d2ba72;
+    background-color: rgb(255, 255, 255, 0);
 }
 
 .footer .nav {
@@ -149,6 +154,15 @@ h4 {
     
     .footer .col-md-4 {
         text-align: center;
+    }
+    .header {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    .hero {
+        height: 100vh; /* Adjust height for smaller screens */
+    }
+    .menu-title {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
 }
 
@@ -266,7 +280,7 @@ h4 {
 
 /* About Us page specific styles */
 .about-section {
-    background-color: #fff5e6;
+    background-color: #ffbf3f;
     padding: 80px 0;
 }
 
@@ -408,7 +422,7 @@ h4 {
 
 /* History of Jerk page styles */
 .history-section {
-    background-color: #fff5e6;
+    background-color: #ffbf3f;
     padding: 80px 0;
 }
 
@@ -482,7 +496,7 @@ h4 {
 
 /* Blog page updated styles */
 .blog-section {
-    background-color: #fff5e6;
+    background-color: #ffbf3f;
     padding: 80px 0;
 }
 
@@ -578,7 +592,7 @@ h4 {
 
 /* Products page styles */
 .products-section {
-    background-color: #fff5e6;
+    background-color: #ffbf3f;
     padding: 80px 0;
 }
 
@@ -659,7 +673,7 @@ h4 {
 
 /* Product details section */
 .product-details {
-    background-color: rgba(255, 255, 255, 0.5);
+    /*background-color: #ffbf3f; */
     border-radius: 15px;
     padding: 3rem;
     margin-top: 4rem;
@@ -730,5 +744,32 @@ img {
 .card .highlighted-post {
     background-color: #f0f8ff !important; /* Light blue background for contrast */
     border: 1px solid #d3d3d3; /* Optional border for definition */
+}
+
+.card {
+    background-color: #ffbf3f;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form specific card styles */
+.form .card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Ensure form inputs are responsive */
+.form .form-control {
+    max-width: 100%;
+    word-wrap: break-word;
 }
 

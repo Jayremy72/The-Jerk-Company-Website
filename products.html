@@ -39,20 +39,54 @@
             border-radius: 10px;
         }
         .products {
-            background-color: #f8f9fa; /* Light grey background for product section */
-            padding: 50px 0;
+          
+          padding: 50px 0;
         }
         .product-details {
-            background-color: #e9ecef; /* Slightly darker grey for product details */
-            padding: 50px 0;
+          padding: 50px 0;
         }
         .footer .nav {
             display: flex;
             justify-content: space-between; /* Distribute space evenly */
-            flex-wrap: wrap; /* Allow items to wrap if needed */
+          
         }
         .footer .nav-item {
             margin: 5px 10px; /* Add margin for spacing */
+        }
+        /* Remove these margin/padding properties */
+        .header header {
+            margin-bottom: 0 !important; /* Override Bootstrap's mb-4 */
+            padding-bottom: 0;
+        }
+        /* Remove border that creates gap */
+        .header .border-bottom {
+            border-bottom: none !important;
+        }
+        /* Update the products section styles */
+        .products-section {
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Update container spacing */
+        .products-section .container {
+            padding-top: 20px; /* Add some space only at the top */
+        }
+
+        /* Adjust card spacing */
+        .products-section .card {
+            margin-bottom: 20px; /* Consistent spacing between cards */
+        }
+
+        /* Remove extra padding from product details */
+        .product-details {
+            padding: 20; /* Remove the 50px padding */
+            margin: 0; /* Remove any margins */
+        }
+
+        /* Adjust row spacing */
+        .row.justify-content-center.g-4 {
+            margin: 0; /* Remove default row margin */
         }
     </style>
 </head>
@@ -62,7 +96,6 @@
       <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
           <img src="./Assets/Images/THE JERK CO - no bg logo.png" alt="The Jerk Company logo" width="120" height="75">
-          <span class="fs-4">The Jerk Co Products</span>
         </a>
         <ul class="nav nav-pills align-items-center">
           <li class="nav-item"><a href="Index.html" class="nav-link text-primary-emphasis">Home</a></li>
@@ -89,7 +122,7 @@
   </section>
 
   <section class="products-section">
-    <div class="container">
+    <div class="container pb-4">
         <h2 class="fw-bold text-center">Our Products</h2>
         
         <div class="row justify-content-center g-4">
@@ -151,64 +184,64 @@
     <div class="container">
         <h2 class="fw-bold text-center mb-5">Explore Our Products in Detail</h2>
         <div class="row">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 card">
                 <h3>Jerk Marinade</h3>
-                <p>Our signature Jerk Marinade is crafted to infuse your dishes with the authentic flavors of the Caribbean. Perfect for marinating meats and vegetables.</p>
+                <p>Our signature Jerk Marinade is crafted to infuse your dishes with the authentic flavors of the Caribbean. Incorporating thyme, garlic, pimento, scallions and more it's perfect for marinating meats and vegetables.</p>
                 <a href="#" class="btn btn-primary">Buy Jerk Marinade</a>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 card">
                 <h3>Jerk Glaze </h3>
-                <p>Choose your heat level with our Jerk Glaze range. Whether you prefer mild, medium, or the fiery Angry Jerk, each glaze adds a sweet and spicy finish to your meals.</p>
+                <p>Choose your heat level with our Jerk Glaze range. Whether you prefer mild, medium, or the fiery Angry Jerk, each glaze adds a sweet and spicy finish to your meals. use in conjunction with the marinade</p>
                 <a href="#" class="btn btn-primary">Buy Jerk Glaze</a>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 card">
                 <h3>Green Seasoning</h3>
                 <p>Our Green Seasoning is a versatile blend of herbs and spices, perfect for marinating, seasoning, or as a base for your favorite dishes.</p>
                 <a href="#" class="btn btn-primary">Buy Green Seasoning</a>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 card">
                 <h3>Jerk Dry Rub</h3>
-                <p>Experience the bold flavors of Jamaica with our Jerk Dry Rub. Ideal for grilling, roasting, or adding a kick to any dish.</p>
+                <p>Experience the bold flavors of Jamaica with our Jerk Dry Rub. Ideal for grilling, roasting, or adding a kick to any dish. Use an oil base before rubbing on meat</p>
                 <a href="#" class="btn btn-primary">Buy Jerk Dry Rub</a>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 card">
                 <h3>All Purpose Seasoning</h3>
-                <p>Our All Purpose Seasoning is a must-have in any kitchen. Enhance the flavor of any dish with this versatile blend.</p>
+                <p>Our All Purpose Seasoning is a must-have in any Caribbean kitchen. Enhance the flavor of any dish with this versatile herb and spice blend. </p>
                 <a href="#" class="btn btn-primary">Buy All Purpose Seasoning</a>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 card">
                 <h3>Caribbean Curry Powder</h3>
                 <p>Our Caribbean Curry Powder is a rich blend of spices that brings the vibrant flavors of the Caribbean to your kitchen. Perfect for curries and stews.</p>
                 <a href="#" class="btn btn-primary">Buy Caribbean Curry Powder</a>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 card">
                 <h3>Frozen Jamaican Patties</h3>
                 <p>Experience the convenience of our frozen Jamaican patties, perfect for a quick and satisfying meal. Each patty features our signature flaky, golden pastry filled with your choice of seasoned minced beef or vegetable filling. Made with authentic Caribbean spices and ready to bake straight from your freezer.</p>
                 <a href="#" class="btn btn-primary">Buy Jamaican Patties</a>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 card">
                 <h3>Pineapple & Habanero Hot Sauce</h3>
-                <p>Experience the perfect balance of sweet tropical pineapple and the intense heat of habanero peppers. This versatile hot sauce adds a delicious Caribbean twist to any dish, from grilled meats to seafood. Made with fresh, natural ingredients and no artificial preservatives.</p>
+                <p>Experience the perfect balance of sweet tropical pineapple and the intense heat of habanero peppers. <br>This versatile hot sauce adds a delicious Caribbean twist to any dish, from grilled meats to seafood. Made with fresh, natural ingredients and no artificial preservatives.</p>
                 <a href="#" class="btn btn-primary">Buy Hot Sauce</a>
             </div>
         </div>
     </div>
   </section>
 
-  <section id="footer" class="footer">
+  <section id="footer" class="footer bg-body-secondary">
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <p class="col-md-4 mb-0 text-body-secondary">© 2024 The Jerk Company</p>
-            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <a href="#" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                 <img src="./Assets/Images/THE JERK CO - no bg logo.png" alt="The Jerk Company logo" width="75" height="50">
             </a>
-            <ul class="nav col-md-4">
-                <li class="nav-item"><a href="Index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
-                <li class="nav-item"><a href="history-of-jerk.html" class="nav-link">History of Jerk</a></li>
-                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="Index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link px-2 text-body-secondary">Products</a></li>
+                <li class="nav-item"><a href="history-of-jerk.html" class="nav-link px-2 text-body-secondary">History of Jerk</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link px-2 text-body-secondary">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Events</a></li>
+                <li class="nav-item"><a href="about-us.html" class="nav-link px-2 text-body-secondary">About Us</a></li>
             </ul>
         </footer>
     </div>
